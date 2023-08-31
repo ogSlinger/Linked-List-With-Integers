@@ -51,7 +51,7 @@ void LinkedList::addNode(int val) {
 	LinkedListNode* newNode = new LinkedListNode(val);
 	
 	this->leftOff->setNextNode(newNode);
-	leftOff = leftOff->getNextNodePtr();
+	this->leftOff = leftOff->getNextNodePtr();
 
 	this->nodeVec.push_back(newNode);
 }
